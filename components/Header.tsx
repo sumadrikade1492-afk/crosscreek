@@ -6,10 +6,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <div className="flex items-center">
             <span className="text-2xl font-extrabold tracking-tight text-[#c8102e]">
-              POST
-            </span>
-            <span className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-              NET
+              Post &amp; Print
             </span>
             <span className="ml-2 text-xs text-gray-500 uppercase tracking-wide hidden sm:inline-block">
               Tampa
@@ -35,10 +32,10 @@ export default function Header() {
 
         {/* CTA */}
         <a
-          href="tel:8135650010"
+          href="tel:8134019820"
           className="bg-[#c8102e] text-white text-sm font-semibold px-4 py-2 rounded hover:bg-[#a50d25] transition-colors"
         >
-          (813) 565-0010
+          (813) 401-9820
         </a>
       </div>
     </header>

@@ -5,8 +5,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="mb-3">
-            <span className="text-xl font-extrabold text-[#c8102e]">POST</span>
-            <span className="text-xl font-extrabold text-white">NET</span>
+            <span className="text-xl font-extrabold text-[#c8102e]">Post &amp; Print</span>
             <span className="ml-2 text-xs text-gray-500 uppercase tracking-wide">Tampa</span>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed">
@@ -54,11 +53,11 @@ export default function Footer() {
         <div>
           <h3 className="text-xs uppercase tracking-widest text-gray-500 mb-3">Contact</h3>
           <address className="not-italic text-sm space-y-2">
-            <p>6421 N. Florida Ave, Ste D</p>
-            <p>Tampa, FL 33604</p>
+            <p>10861 Cross Creek Blvd</p>
+            <p>Tampa, FL 33647</p>
             <p className="pt-1">
-              <a href="tel:8135650010" className="hover:text-white transition-colors">
-                (813) 565-0010
+              <a href="tel:8134019820" className="hover:text-white transition-colors">
+                (813) 401-9820
               </a>
             </p>
             <p>
@@ -74,7 +73,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between gap-2 text-xs text-gray-600">
-        <p>© {new Date().getFullYear()} PostNet Tampa. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Post &amp; Print Tampa. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="#" className="hover:text-gray-400 transition-colors">
             Privacy Policy
