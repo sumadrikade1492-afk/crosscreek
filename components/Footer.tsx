@@ -54,7 +54,7 @@ export default function Footer() {
         <div>
           <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-3">Contact</h3>
           <address className="not-italic text-sm space-y-2 text-gray-300">
-            <p>10861 Cross Creek Blvd</p>
+            <p>10861 Cross Creek Blvd,</p>
             <p>Tampa, FL 33647</p>
             <p className="pt-1">
               <a href="tel:8134019820" className="hover:text-[#3FA9F5] transition-colors">
@@ -63,10 +63,10 @@ export default function Footer() {
             </p>
             <p>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="hover:text-[#3FA9F5] transition-colors"
               >
-                fl178@postnet.com
+                info@postandprint.com
               </a>
             </p>
           </address>

@@ -14,7 +14,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="mailto:fl178@postnet.com"
+              href="mailto:info@postandprint.com"
               className="bg-[#1E5AA8] text-white font-semibold px-6 py-3 rounded hover:bg-[#0B2A4A] transition-colors"
             >
               Get a Print Quote
