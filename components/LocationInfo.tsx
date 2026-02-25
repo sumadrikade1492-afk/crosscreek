@@ -26,7 +26,7 @@ export default function LocationInfo() {
             Address
           </h2>
           <p className="text-gray-800 font-semibold text-lg leading-snug">
-            10861 Cross Creek Blvd
+            10861 Cross Creek Blvd,
             <br />
             Tampa, FL 33647
           </p>
