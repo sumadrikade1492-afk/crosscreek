@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --postnet-red: #0B2A4A; /* primary blue (legacy name kept) */
+  --postnet-dark: #0B2A4A; /* text primary */
+  --postnet-gray: #F5F9FF; /* section background alternate */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0B2A4A;
+  background: #FFFFFF;
+}
