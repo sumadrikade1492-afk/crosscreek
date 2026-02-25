@@ -52,7 +52,7 @@ export default function LocationInfo() {
           </p>
           <p className="text-gray-600 text-sm mt-1">
             <a
-              href="mailto:fl178@postnet.com"
+              href="mailto:info@postandprint.com"
               className="hover:text-[#1E5AA8] transition-colors"
             >
               fl178@postnet.com
