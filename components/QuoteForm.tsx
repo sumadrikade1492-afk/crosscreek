@@ -2,9 +2,6 @@
 
 import { FormEvent, useState } from "react";
 
-const N8N_WEBHOOK_URL =
-  "https://sumadri.app.n8n.cloud/webhook/0ee7a5a8-b35d-42fc-8140-0714d9ea3009";
-
 const initialForm = {
   name: "",
   email: "",
@@ -24,7 +21,7 @@ export default function QuoteForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch(N8N_WEBHOOK_URL, {
+      const response = await fetch("/api/quote", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +34,7 @@ export default function QuoteForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Webhook request failed.");
+        throw new Error("Request failed.");
       }
 
       setForm(initialForm);
