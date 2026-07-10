@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const hours = [
   { day: "Monday", time: "9:00 AM – 6:00 PM" },
   { day: "Tuesday", time: "9:00 AM – 6:00 PM" },
@@ -59,12 +61,12 @@ export default function LocationInfo() {
             </a>
           </p>
           <div className="mt-4 flex gap-3">
-            <a
-              href="mailto:info@postandprint.com"
+            <Link
+              href="/contact"
               className="text-sm bg-[#1E5AA8] text-white px-4 py-2 rounded font-semibold hover:bg-[#0B2A4A] transition-colors"
             >
               Send a Print File
-            </a>
+            </Link>
           </div>
         </div>
 
