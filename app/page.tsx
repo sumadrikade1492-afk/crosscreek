@@ -4,6 +4,7 @@ import LocationInfo from "@/components/LocationInfo";
 import Services from "@/components/Services";
 import FeaturedServices from "@/components/FeaturedServices";
 import Footer from "@/components/Footer";
+import QuoteForm from "@/components/QuoteForm";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <LocationInfo />
       <Services />
       <FeaturedServices />
+      <QuoteForm />
       <Footer />
     </main>
   );

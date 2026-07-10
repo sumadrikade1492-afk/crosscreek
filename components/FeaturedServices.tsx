@@ -54,7 +54,7 @@ export default function FeaturedServices() {
               <h3 className="text-lg font-bold text-[#0B2A4A]">{service.title}</h3>
               <p className="text-sm text-gray-600 flex-1">{service.description}</p>
               <a
-                href="mailto:fl178@postnet.com"
+                href="#quote"
                 className="text-sm font-semibold text-[#1E5AA8] hover:text-[#0B2A4A] hover:underline self-start"
               >
                 {service.cta} →
