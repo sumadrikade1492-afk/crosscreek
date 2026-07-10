@@ -13,6 +13,18 @@ type QuotePayload = {
   source?: string;
 };
 
+function buildWebhookUrl(webhookUrl: string, payload: QuotePayload) {
+  const url = new URL(webhookUrl);
+
+  Object.entries(payload).forEach(([key, value]) => {
+    if (typeof value === "string" && value.length > 0) {
+      url.searchParams.set(key, value);
+    }
+  });
+
+  return url.toString();
+}
+
 export async function POST(request: Request) {
   let payload: QuotePayload;
 
@@ -38,11 +50,29 @@ export async function POST(request: Request) {
       cache: "no-store",
     });
 
-    if (!webhookResponse.ok) {
-      return NextResponse.json({ error: "Webhook request failed." }, { status: 502 });
+    if (webhookResponse.ok) {
+      return NextResponse.json({ ok: true });
     }
 
-    return NextResponse.json({ ok: true });
+    const errorText = await webhookResponse.text();
+
+    if (
+      webhookResponse.status === 404 &&
+      errorText.includes("not registered for POST requests")
+    ) {
+      const getResponse = await fetch(buildWebhookUrl(webhookUrl, payload), {
+        method: "GET",
+        cache: "no-store",
+      });
+
+      if (getResponse.ok) {
+        return NextResponse.json({ ok: true, fallback: "GET" });
+      }
+    }
+
+    console.error("Quote webhook failed", webhookResponse.status, errorText);
+
+    return NextResponse.json({ error: "Webhook request failed." }, { status: 502 });
   } catch {
     return NextResponse.json({ error: "Unable to reach webhook." }, { status: 502 });
   }
